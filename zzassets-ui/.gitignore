@@ -21,13 +21,3 @@ selenium-debug.log
 
 package-lock.json
 yarn.lock
-
-bin/
-build/
-public/
-src/
-.editorconfig
-vue.config.js
-babel.config.js
-.env.development
-

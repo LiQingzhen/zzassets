@@ -44,17 +44,4 @@ nbdist/
 !*/build/*.xml
 
 
-## TEST
-bin/
-doc/
-ruoyi-admin/
-ruoyi-common/
-ruoyi-framework/
-ruoyi-generator/
-ruoyi-quartz/
-ruoyi-system/
-LICENSE
-sql/
-README.md
-ry.bat
-ry.sh
+

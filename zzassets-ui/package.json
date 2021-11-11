@@ -1,8 +1,8 @@
 {
-  "name": "ruoyi",
+  "name": "zzassets",
   "version": "3.7.0",
-  "description": "若依管理系统",
-  "author": "若依",
+  "description": "资产管理系统",
+  "author": "LQZ",
   "license": "MIT",
   "scripts": {
     "dev": "vue-cli-service serve",

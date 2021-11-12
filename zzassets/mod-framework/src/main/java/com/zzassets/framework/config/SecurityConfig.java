@@ -106,7 +106,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter
                         "/**/*.css",
                         "/**/*.js",
                         "/profile/**",
-                        "/test/**"
+                        "/test/**"      //  接口测试时，只需在路径最前面加上test即可
                 ).permitAll()
                 .antMatchers("/swagger-ui.html").anonymous()
                 .antMatchers("/swagger-resources/**").anonymous()

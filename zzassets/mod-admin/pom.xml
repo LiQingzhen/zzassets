@@ -61,6 +61,12 @@
             <artifactId>mod-generator</artifactId>
         </dependency>
 
+        <!-- 资产模块-->
+        <dependency>
+            <groupId>com.zzassets</groupId>
+            <artifactId>mod-assets</artifactId>
+        </dependency>
+
     </dependencies>
 
     <build>

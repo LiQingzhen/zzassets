@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zzassets.assets.mapper.AssetsAccountsMapper">
+  <resultMap id="AssetsAccountMap" type="com.zzassets.assets.domain.AssetsAccount">
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="acct_type" jdbcType="VARCHAR" property="acctType" />
+    <result column="acct_name" jdbcType="VARCHAR" property="acctName" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="rmb" jdbcType="BIGINT" property="rmb" />
+    <result column="is_assets" jdbcType="VARCHAR" property="isAssets" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="status" jdbcType="VARCHAR" property="status" />
+    <result column="holder" jdbcType="VARCHAR" property="holder" />
+  </resultMap>
+
+  <select id="list" parameterType="com.zzassets.assets.domain.AssetsAccount" resultMap="AssetsAccountMap">
+    select * from assets_accounts where holder = #{holder}
+  </select>
+
+</mapper>

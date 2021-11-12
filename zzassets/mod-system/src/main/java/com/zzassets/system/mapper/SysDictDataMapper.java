@@ -3,12 +3,14 @@ package com.zzassets.system.mapper;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 import com.zzassets.common.core.domain.entity.SysDictData;
+import org.springframework.stereotype.Repository;
 
 /**
  * 字典表 数据层
  * 
  * @author ruoyi
  */
+@Repository
 public interface SysDictDataMapper
 {
     /**

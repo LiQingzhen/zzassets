@@ -7,7 +7,9 @@ import com.zzassets.common.core.domain.entity.SysDictData;
 import com.zzassets.system.mapper.SysDictDataMapper;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class AssetsAccountsServiceImpl implements IAssetsAccountsService {
@@ -23,7 +25,9 @@ public class AssetsAccountsServiceImpl implements IAssetsAccountsService {
     public List<AssetsAccount> list(AssetsAccount account) {
         //  获取“资产账户分类”
         List<SysDictData> accountsTypes = dictDataMapper.selectDictDataList(dictData);
-
+        accountsTypes.stream().map(types -> new HashMap<String, String>(){{
+            put("", "");
+        }}).collect(Collectors.toList());
         return accountsMapper.list(account);
     }
 

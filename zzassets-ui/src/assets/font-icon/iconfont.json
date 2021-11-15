@@ -1,0 +1,149 @@
+{
+  "id": "2937900",
+  "name": "assets",
+  "font_family": "element-icons",
+  "css_prefix_text": "el-icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "12280882",
+      "name": "税票报销",
+      "font_class": "shuipiaobaoxiao",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
+      "icon_id": "1713579",
+      "name": "现金券",
+      "font_class": "xianjinquan",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
+      "icon_id": "1922701",
+      "name": "可爱",
+      "font_class": "keai",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "1963036",
+      "name": "ABC农业银行",
+      "font_class": "ABC",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "6078867",
+      "name": "京东-01",
+      "font_class": "jingdong-",
+      "unicode": "e643",
+      "unicode_decimal": 58947
+    },
+    {
+      "icon_id": "6359539",
+      "name": "浦发银行",
+      "font_class": "pufayinhang",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "6360153",
+      "name": "建设银行",
+      "font_class": "jiansheyinhang",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "6360156",
+      "name": "交通银行",
+      "font_class": "jiaotongyinhang",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "6360164",
+      "name": "邮政银行",
+      "font_class": "youzhengyinhang",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "8574987",
+      "name": "支付宝",
+      "font_class": "zhifubao",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "10867058",
+      "name": "工商银行",
+      "font_class": "gongshangyinhang",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "10867110",
+      "name": "中国银行",
+      "font_class": "zhongguoyinhang",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "10867112",
+      "name": "招商银行",
+      "font_class": "zhaoshangyinhang",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "14055537",
+      "name": "花呗",
+      "font_class": "huabei",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "15933094",
+      "name": "微信",
+      "font_class": "weixin",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "21492640",
+      "name": "父母",
+      "font_class": "037-parents",
+      "unicode": "e719",
+      "unicode_decimal": 59161
+    },
+    {
+      "icon_id": "21785897",
+      "name": "公积金",
+      "font_class": "gongjijin",
+      "unicode": "e683",
+      "unicode_decimal": 59011
+    },
+    {
+      "icon_id": "23568276",
+      "name": "医保凭证",
+      "font_class": "yibaopingzheng",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "24111777",
+      "name": "黄金",
+      "font_class": "huangjin",
+      "unicode": "fb9f",
+      "unicode_decimal": 64415
+    },
+    {
+      "icon_id": "24768208",
+      "name": "面性钱包现金",
+      "font_class": "mianxingqianbao",
+      "unicode": "e71f",
+      "unicode_decimal": 59167
+    }
+  ]
+}

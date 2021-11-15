@@ -2,6 +2,7 @@ import Vue from 'vue'
 
 import Cookies from 'js-cookie'
 
+
 import Element from 'element-ui'
 import './assets/styles/element-variables.scss'
 
@@ -14,6 +15,9 @@ import directive from './directive' //directive
 import plugins from './plugins' // plugins
 
 import './assets/icons' // icon
+import '@/assets/font-icon/iconfont.css'
+import '@/assets/font-icon/iconfont.js'
+
 import './permission' // permission control
 import { getDicts } from "@/api/system/dict/data";
 import { getConfigKey } from "@/api/system/config";

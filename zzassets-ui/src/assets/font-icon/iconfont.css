@@ -2,8 +2,8 @@
   font-family: "element-icons"; /* Project id 2937900 */
   /* Color fonts */
   src: 
-       url('iconfont.woff2?t=1636954827248') format('woff2'),
-       url('iconfont.ttf?t=1636954827248') format('truetype');
+       url('iconfont.woff2?t=1636962680152') format('woff2'),
+       url('iconfont.ttf?t=1636962680152') format('truetype');
 }
 
 .element-icons {
@@ -16,6 +16,54 @@
 
 .size-icon {
   font-size: 20px;
+}
+
+.el-icon-zhanghaoyichang:before {
+  content: "\e665";
+}
+
+.el-icon-gouwuche:before {
+  content: "\e608";
+}
+
+.el-icon-weixiu:before {
+  content: "\e609";
+}
+
+.el-icon-juhui:before {
+  content: "\e60d";
+}
+
+.el-icon-wodexuexi:before {
+  content: "\e65c";
+}
+
+.el-icon-jiaotongchuhang:before {
+  content: "\e87e";
+}
+
+.el-icon-jiankang:before {
+  content: "\e6d6";
+}
+
+.el-icon-tongxun:before {
+  content: "\e6e1";
+}
+
+.el-icon-yinshi:before {
+  content: "\e63f";
+}
+
+.el-icon-yule:before {
+  content: "\e603";
+}
+
+.el-icon-house:before {
+  content: "\e606";
+}
+
+.el-icon-012-family:before {
+  content: "\e711";
 }
 
 .el-icon-shuipiaobaoxiao:before {

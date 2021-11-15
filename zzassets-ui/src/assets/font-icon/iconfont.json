@@ -6,6 +6,90 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "2131906",
+      "name": "账号异常",
+      "font_class": "zhanghaoyichang",
+      "unicode": "e665",
+      "unicode_decimal": 58981
+    },
+    {
+      "icon_id": "3102794",
+      "name": "购物车",
+      "font_class": "gouwuche",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "3858839",
+      "name": "维修",
+      "font_class": "weixiu",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "3893537",
+      "name": "聚会",
+      "font_class": "juhui",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "4294147",
+      "name": "我的学习",
+      "font_class": "wodexuexi",
+      "unicode": "e65c",
+      "unicode_decimal": 58972
+    },
+    {
+      "icon_id": "7444181",
+      "name": "交通出行",
+      "font_class": "jiaotongchuhang",
+      "unicode": "e87e",
+      "unicode_decimal": 59518
+    },
+    {
+      "icon_id": "14626422",
+      "name": "健康",
+      "font_class": "jiankang",
+      "unicode": "e6d6",
+      "unicode_decimal": 59094
+    },
+    {
+      "icon_id": "14626467",
+      "name": "通讯",
+      "font_class": "tongxun",
+      "unicode": "e6e1",
+      "unicode_decimal": 59105
+    },
+    {
+      "icon_id": "15684455",
+      "name": "饮食",
+      "font_class": "yinshi",
+      "unicode": "e63f",
+      "unicode_decimal": 58943
+    },
+    {
+      "icon_id": "19690321",
+      "name": "娱乐",
+      "font_class": "yule",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "21432645",
+      "name": "住房用地",
+      "font_class": "house",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "21490756",
+      "name": "家人",
+      "font_class": "012-family",
+      "unicode": "e711",
+      "unicode_decimal": 59153
+    },
+    {
       "icon_id": "12280882",
       "name": "税票报销",
       "font_class": "shuipiaobaoxiao",

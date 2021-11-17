@@ -181,3 +181,18 @@ export function handleTree(data, id, parentId, children) {
 	}
 	return tree;
 }
+
+export function formatterNumber(val) {
+  var res = "";
+  if (val == null || val == "undefined" || val == "null") {
+    val = ""
+  }
+  if(val.toString() != '' && val != null){
+    if (val.toString() === "-") {
+      res = val;
+    } else {
+      res = Number(val).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, '$1,')
+    }
+  }
+  return res;
+}

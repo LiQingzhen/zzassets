@@ -82,6 +82,7 @@
 </template>
 
 <script>
+import {formatterNumber} from "@/utils/ruoyi"
 export default {
   name: "Index",
   data() {
@@ -132,7 +133,7 @@ export default {
       return "<div align='left' style='text-align:left'>"
       + "<i class='size-icon " + val.icon + "'></i>  " 
       + val.name +"</div><div align='right' style='text-align:right;color:"+ val.color +"'>" 
-      + val.rmb + "</div><hr>"
+      + formatterNumber(val.rmb) + "</div><hr>"
     }
   },
 };

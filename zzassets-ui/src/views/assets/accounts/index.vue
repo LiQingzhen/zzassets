@@ -14,7 +14,7 @@
             <span style="color:green;font-size:16px">现金</span>
           </div>
           <div class="body">
-            <p v-for="account in accounts.cash" :key="account.id" v-html="account.html" @click="pop(account.id)"></p>
+            <p v-for="account in accounts.cash" :key="account.id" v-html="getHTML(account)" @click="pop(account.id)"></p>
           </div>
         </el-card>
       </el-col>
@@ -25,7 +25,7 @@
             <span style="color:green;font-size:16px">投资账户</span>
           </div>
           <div class="body">
-            <p v-for="account in accounts.invest" :key="account.id" v-html="account.html" @click="pop(account.id)"></p>
+            <p v-for="account in accounts.invest" :key="account.id" v-html="getHTML(account)" @click="pop(account.id)"></p>
           </div>
         </el-card>
       </el-col>  
@@ -36,7 +36,7 @@
             <span style="color:green;font-size:16px">网络账户</span>
           </div>
           <div class="body">
-            <p v-for="account in accounts.netaccount" :key="account.id" v-html="account.html" @click="pop(account.id)"></p>
+            <p v-for="account in accounts.netaccount" :key="account.id" v-html="getHTML(account)" @click="pop(account.id)"></p>
           </div>
         </el-card>
       </el-col>          
@@ -51,7 +51,7 @@
             <span style="color:green;font-size:16px">应收账户</span>
           </div>
           <div class="body">
-            <p v-for="account in accounts.receive" :key="account.id" v-html="account.html" @click="pop(account.id)"></p>
+            <p v-for="account in accounts.receive" :key="account.id" v-html="getHTML(account)" @click="pop(account.id)"></p>
           </div>
         </el-card>
       </el-col> 
@@ -62,7 +62,7 @@
             <span style="color:green;font-size:16px">储蓄卡</span>
           </div>
           <div class="body">
-            <p v-for="account in accounts.debitcard" :key="account.id" v-html="account.html" @click="pop(account.id)"></p>
+            <p v-for="account in accounts.debitcard" :key="account.id" v-html="getHTML(account)" @click="pop(account.id)"></p>
           </div>
         </el-card>
       </el-col>
@@ -73,7 +73,7 @@
             <span style="color:red;font-size:16px">应付账户</span>
           </div>
           <div class="body">
-            <p v-for="account in accounts.pay" :key="account.id" v-html="account.html" @click="pop(account.id)"></p>
+            <p v-for="account in accounts.pay" :key="account.id" v-html="getHTML(account)" @click="pop(account.id)"></p>
           </div>
         </el-card>
       </el-col>   
@@ -90,37 +90,35 @@ export default {
       version: "3.7.0",
       accounts: {
         cash: [
-          {"id": "111", "html": "<div align='left' style='text-align:left'><i class='size-icon el-icon-mianxingqianbao'></i>  现金</div><div align='right' style='text-align:right;color:green'>100003.00</div><hr>"},
-          {"id": "222", "html": "<div align='left' style='text-align:left'><i class='size-icon el-icon-xianjinquan'></i> 电子现金</div><div align='right' style='text-align:right;color:green'>1005603.54</div><hr>"}
+          {"id": "111", "icon": "el-icon-mianxingqianbao", "name": "现金", "color": "green", "rmb": 1028.54},
+          {"id": "222", "icon": "el-icon-xianjinquan", "name": "电子现金", "color": "green", "rmb": 43.00 }
         ],
         debitcard: [
-          {"id": "333", "html": "<div align='left' style='text-align:left'><i class='size-icon el-icon-jiansheyinhang'></i> 建设银行</div><div align='right' style='text-align:right;color:green'>15603.12</div><hr>"},
-          {"id": "333", "html": "<div align='left' style='text-align:left'><i class='size-icon el-icon-gongshangyinhang'></i> 工商银行</div><div align='right' style='text-align:right;color:green'>15603.23</div><hr>"},
-          {"id": "333", "html": "<div align='left' style='text-align:left'><i class='size-icon el-icon-jiaotongyinhang'></i> 交通银行</div><div align='right' style='text-align:right;color:green'>15603.01</div><hr>"},
-          {"id": "333", "html": "<div align='left' style='text-align:left'><i class='size-icon el-icon-zhaoshangyinhang'></i> 招商银行</div><div align='right' style='text-align:right;color:green'>15603.00</div><hr>"},
-          {"id": "333", "html": "<div align='left' style='text-align:left'><i class='size-icon el-icon-pufayinhang'></i> 浦发银行</div><div align='right' style='text-align:right;color:green'>156.03</div><hr>"}
+          {"id": "333", "icon": "el-icon-jiansheyinhang", "name": "建设银行", "color": "green", "rmb": 5000.00 },
+          {"id": "444", "icon": "el-icon-gongshangyinhang", "name": "工商银行", "color": "green", "rmb": 3.79 },
+          {"id": "555", "icon": "el-icon-jiaotongyinhang", "name": "交通银行", "color": "green", "rmb": 5369.19 },
+          {"id": "666", "icon": "el-icon-zhaoshangyinhang", "name": "招商银行", "color": "green", "rmb": 4378.44 },
+          {"id": "777", "icon": "el-icon-pufayinhang", "name": "浦发银行", "color": "green", "rmb": 5.00 }
         ],
         netaccount: [
-          {"id": "333", "html": "<div align='left' style='text-align:left'><i class='size-icon el-icon-zhifubao'></i> 支付宝</div><div align='right' style='text-align:right;color:green'>156.03</div><hr>"},
-          {"id": "333", "html": "<div align='left' style='text-align:left'><i class='size-icon el-icon-weixin'></i> 微信</div><div align='right' style='text-align:right;color:green'>156.03</div><hr>"}
+          {"id": "333", "icon": "el-icon-zhifubao", "name": "支付宝", "color": "green", "rmb": 16.84 },
+          {"id": "333", "icon": "el-icon-weixin", "name": "微信", "color": "green", "rmb": 365.54 }
         ],
         invest: [
-          {"id": "333", "html": "<div align='left' style='text-align:left'><i class='size-icon el-icon-yibaopingzheng'></i> 医保卡</div><div align='right' style='text-align:right;color:green'>156.03</div><hr>"}
+          {"id": "333", "icon": "el-icon-yibaopingzheng", "name": "医保卡", "color": "green", "rmb": 2315.54 }
         ],
         receive: [
-          {"id": "333", "html": "<div align='left' style='text-align:left'><i class='size-icon el-icon-huangjin'></i> 投资</div><div align='right' style='text-align:right;color:green'>156.03</div><hr>"},
-          {"id": "333", "html": "<div align='left' style='text-align:left'><i class='size-icon el-icon-shuipiaobaoxiao'></i> 待报销</div><div align='right' style='text-align:right;color:green'>156.03</div><hr>"},
-          {"id": "333", "html": "<div align='left' style='text-align:left'><i class='size-icon el-icon-gongjijin'></i> 公积金</div><div align='right' style='text-align:right;color:green'>156.03</div><hr>"}
-
+          {"id": "333", "icon": "el-icon-huangjin", "name": "投资", "color": "green", "rmb": 49253.87 },
+          {"id": "333", "icon": "el-icon-shuipiaobaoxiao", "name": "待报销", "color": "green", "rmb": 1007.00 },
+          {"id": "333", "icon": "el-icon-gongjijin", "name": "公积金", "color": "green", "rmb": 28423.47 }
         ],
-        pay: [
-          {"id": "333", "html": "<div align='left' style='text-align:left'><i class='size-icon el-icon-huangjin'></i> 投资</div><div align='right' style='text-align:right;color:red'>-156.03</div><hr>"},
-          {"id": "333", "html": "<div align='left' style='text-align:left'><i class='size-icon el-icon-huabei'></i> 花呗</div><div align='right' style='text-align:right;color:red'>-156.03</div><hr>"},
-          {"id": "333", "html": "<div align='left' style='text-align:left'><i class='size-icon el-icon-jingdong-'></i> 白条</div><div align='right' style='text-align:right;color:red'>-856.03</div><hr>"},
-          {"id": "333", "html": "<div align='left' style='text-align:left'><i class='size-icon el-icon-037-parents'></i> 父母</div><div align='right' style='text-align:right;color:red'>-8.68</div><hr>"},
-          {"id": "333", "html": "<div align='left' style='text-align:left'><i class='size-icon el-icon-keai'></i> 小可爱</div><div align='right' style='text-align:right;color:red'>-0.79</div><hr>"},
+        pay: [  
+          {"id": "333", "icon": "el-icon-huabei", "name": "花呗", "color": "red", "rmb": -169.25 },
+          {"id": "333", "icon": "el-icon-jingdong-", "name": "白条", "color": "red", "rmb": -0.00 },
+          {"id": "333", "icon": "el-icon-037-parents", "name": "父母", "color": "red", "rmb": -0.00 },
+          {"id": "333", "icon": "el-icon-keai", "name": "小可爱", "color": "red", "rmb": -4000.00 }
         ],
-      }
+      },
     };
   },
   methods: {
@@ -129,6 +127,12 @@ export default {
     },
     pop(val) {
       this.$message(val);
+    },
+    getHTML(val) {
+      return "<div align='left' style='text-align:left'>"
+      + "<i class='size-icon " + val.icon + "'></i>  " 
+      + val.name +"</div><div align='right' style='text-align:right;color:"+ val.color +"'>" 
+      + val.rmb + "</div><hr>"
     }
   },
 };
